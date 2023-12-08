@@ -6,11 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
-
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-
     @FindBy(xpath = "//*[@class='icb-btn sc-bcXHqe sc-hLBbgP sc-ftTHYK dcvrLS dufgkr ecppKW']")
     public WebElement cookieButton;
 

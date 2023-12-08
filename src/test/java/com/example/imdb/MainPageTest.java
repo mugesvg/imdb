@@ -61,6 +61,7 @@ public class MainPageTest {
         jse.executeScript("argument[0].scrollIntoView(true)",mainPage.jazzSingerMovieDirector);
         String secondDirectorName=mainPage.jazzSingerMovieDirector.getText();
         String secondMovieWrites=mainPage.jazzSingerMovieWriters.getText();
+
         Assert.assertEquals(firstDirectorName,secondDirectorName);
         Assert.assertEquals(firstMovieWrites,secondMovieWrites);
     }
